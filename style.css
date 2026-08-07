@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1
+{color: black;}
+
+body {
+  /* Font modern dan latar belakang gradient biru halus */
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, #a7b5d1 0%, #4f6898 100%);
+  color: #ffffff;
+  
+  /* Flexbox untuk menaruh wadah di tengah layar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+body{ 
+    background-image: url(https://images.unsplash.com/photo-1509773896068-7fd415d91e2e?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* 2. KONTEN UTAMA (LINKTREE CONTAINER) */
+.container-linktree {
+  width: 100%;
+  max-width: 400px; /* Pas untuk ukuran layar HP */
+  
+  display: flex;
+  flex-direction: column; /* Menyusun profil, link, & footer ke bawah */
+  align-items: center;    /* Meratakan seluruh elemen tepat di tengah horizontal */
+  text-align: center;
+}
+
+/* 3. PROFIL (AVATAR, NAMA, & BIO) */
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;     /* Membuat foto bulat sempurna */
+  object-fit: cover;
+  border: 3px solid #070721;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 16px;
+}
+
+.container-linktree h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.bio {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-bottom: 28px;
+}
+
+/* 4. DAFTAR LINK (TOMBOL) */
+.links {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Menyusun tombol-tombol dari atas ke bawah */
+  gap: 14px;              /* Jarak antar tombol konsisten */
+  margin-bottom: 32px;
+}
+
+.links a {
+  display: block;
+  width: 100%;
+  padding: 14px 20px;
+  
+  background-color: #002471; /* Warna gelap elegan */
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;       /* Membuat tombol melonjong rapi */
+  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+/* Efek saat tombol ditekan/di-hover */
+.links a:hover {
+  background-color: #6484e5;
+  transform: translateY(-2px); /* Tombol sedikit terangkat */
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* 5. FOOTER */
+footer {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+main{
+    flex:1;
+}
